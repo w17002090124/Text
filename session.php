@@ -4,10 +4,11 @@
     header("Content-type:text/json");
     session_start();
     $message = array('message'=>'success');
-    if(!isset($_SESSION['name'])){
+    if(!isset($_SESSION['userName'])){
         $message['message']='errors';
         echo json_encode($message);
     }else{
+
         echo json_encode($message);
     }
 ?>

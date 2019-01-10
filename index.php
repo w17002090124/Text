@@ -4,7 +4,7 @@
     header("Access-Control-Allow-Headers:Content-Type");
 
     session_start();
-    $userName = $_SESSION['name'];
+    $userName = $_SESSION['userName'];
     $data=array("userName"=>$userName);
 
     echo json_encode($data);

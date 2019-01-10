@@ -3,8 +3,9 @@
     header("Access-Control-Allow-Credentials:true");
     header("Access-Control-Allow-Headers:Content-Type");
     header("Content-type:text/json");
+    session_start();
     $message = array('message'=>'success');
     echo json_encode($message);
-    session_start();
+
     session_destroy();
 ?>
